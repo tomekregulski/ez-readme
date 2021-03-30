@@ -44,3 +44,21 @@ ${answers.email}
 # License
 
 ${answers.license}`;
+
+inquirer
+    .prompt(questions)
+    .then((data,) => {
+        switch(data.license) {
+          case 'MIT':
+            data.license = licenseText.mit;
+            break;
+          case 'Apache':
+            data.license = licenseText.apache;
+            break;
+        }
+        const filename = "README.md";
+        fs.writeFile(filename, generateHTML(data), (err) =>
+          err ? console.log(err) : console.log('Success!')
+        );
+        
+    });
