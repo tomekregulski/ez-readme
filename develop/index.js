@@ -2,7 +2,7 @@ const fs = require("fs");
 const questions = require("./questions.js");
 const licenseText = require("./license.js");
 const inquirer = require("inquirer");
-const generateHTML = (answers) =>
+const generateReadme = (answers) =>
 `# ${answers.title}
 
 * [Description](#description)
@@ -12,8 +12,6 @@ const generateHTML = (answers) =>
 * [Tests](#tests)
 * [Contact](#contact)
 * [License](#license)
-
-
 
 # Description
 
@@ -57,7 +55,7 @@ inquirer
             break;
         }
         const filename = "README.md";
-        fs.writeFile(filename, generateHTML(data), (err) =>
+        fs.writeFile(filename, generateReadme(data), (err) =>
           err ? console.log(err) : console.log('Success!')
         );
         
