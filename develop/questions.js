@@ -33,7 +33,7 @@ module.exports = [
 		type: 'list',
 		name: 'license',
 		message: 'Which license would you like this project to be covered under?',
-		choices: ['MIT', 'Apache']
+		choices: ['MIT', 'Apache', 'GNU GPLv3', 'ISC']
 	},
     {
 		type: 'input',
