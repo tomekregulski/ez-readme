@@ -21,8 +21,8 @@ module.exports = [
 	},
     {
 		type: 'input',
-		name: 'contribution',
-		message: 'What are your guidelines for contribution?',
+		name: 'contributing',
+		message: 'What are your guidelines for contributing?',
 	},
     {
 		type: 'input',
