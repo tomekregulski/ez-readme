@@ -4,8 +4,9 @@ const licenseText = require("./license.js");
 const badgeIcon = require("./badges.js");
 const inquirer = require("inquirer");
 let badge;
+
 const generateReadme = (answers) =>
-`# ${answers.title}
+  `# ${answers.title}
 
 ${badge}
 
@@ -40,37 +41,39 @@ ${answers.testing}
 # Questions
 
 Please reach out through either method below if you have any questions:
-${answers.gitName}
-${answers.email}
+* <a href="${answers.github}">Github</a>
+* <a href="mailto:${answers.email}">${answers.email}</a>
 
 # License
 
-${answers.license}`;
+${answers.license}
 
-inquirer
-    .prompt(questions)
-    .then((data,) => {
-        switch(data.license) {
-          case 'MIT':
-            data.license = licenseText.mit;
-            badge = badgeIcon.mit
-            break;
-          case 'Apache':
-            data.license = licenseText.apache;
-            badge = badgeIcon.apache
-            break;
-          case 'GNU GPLv3':
-            data.license = licenseText.gnu;
-            badge = badgeIcon.gnu
-            break;
-          case 'ISC':
-            data.license = licenseText.isc;
-            badge = badgeIcon.isc
-            break;
-        }
-        const filename = "README.md";
-        fs.writeFile(filename, generateReadme(data), (err) =>
-          err ? console.log(err) : console.log('Success!')
-        );
-        
-    });
+`;
+
+inquirer.prompt(questions).then((data) => {
+  switch (data.license) {
+    case "MIT":
+      data.license = licenseText.mit;
+      badge = badgeIcon.mit;
+      break;
+    case "Apache":
+      data.license = licenseText.apache;
+      badge = badgeIcon.apache;
+      break;
+    case "GNU GPLv3":
+      data.license = licenseText.gnu;
+      badge = badgeIcon.gnu;
+      break;
+    case "ISC":
+      data.license = licenseText.isc;
+      badge = badgeIcon.isc;
+      break;
+    case "none":
+      data.license = "";
+      badge = "";
+  }
+  const filename = "README.md";
+  fs.writeFile(filename, generateReadme(data), (err) =>
+    err ? console.log(err) : console.log("Success!")
+  );
+});
