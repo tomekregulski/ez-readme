@@ -33,6 +33,7 @@ This will be detailed at a later date.
 # Questions
 
 Please reach out through either method below if you have any questions:
+<<<<<<< HEAD
 
 - <a href="undefined">Github</a>
 - <a href="mailto:tomek.regulski@gmail.com">tomek.regulski@gmail.com</a>
