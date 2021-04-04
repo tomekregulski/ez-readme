@@ -42,7 +42,7 @@ As this app grows in complexity, testing may become necessay, but for the time b
 
 Please reach out through either method below if you have any questions:
 
-- <a href="undefined">Github</a>
+- <a href="https://github.com/tomekregulski" target="_blank">Github</a>
 - <a href="mailto:tomek.regulski@gmail.com">tomek.regulski@gmail.com</a>
 
 # License

@@ -41,7 +41,7 @@ ${answers.testing}
 # Questions
 
 Please reach out through either method below if you have any questions:
-* <a href="${answers.github}">Github</a>
+* <a href="https://github.com/${answers.github}" target="_blank">Github</a>
 * <a href="mailto:${answers.email}">${answers.email}</a>
 
 # License
