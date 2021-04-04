@@ -1,6 +1,6 @@
-# 123
+# 23
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 * [Description](#description)
 * [Installation](#installation)
@@ -28,15 +28,15 @@
 
 # Tests
 
-23
+3
 
 # Questions
 
 Please reach out through either method below if you have any questions:
-* <a href="undefined">Github</a>
-* <a href="mailto:tomek.regulski@gmail.com">tomek.regulski@gmail.com</a>
+* <a href="https://github.com/tomekregulski" target="_blank">Github</a>
+* <a href="mailto:23">23</a>
 
 # License
 
-[Apache License](https://www.apache.org/licenses/LICENSE-2.0">)
+[MIT License](https://opensource.org/licenses/MIT)
 
