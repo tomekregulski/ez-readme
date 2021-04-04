@@ -12,7 +12,7 @@ module.exports = [
   {
     type: "input",
     name: "installation",
-    message: "What are your instructions for installation and use?",
+    message: "What are your instructions for installation?",
   },
   {
     type: "input",
@@ -38,7 +38,7 @@ module.exports = [
   {
     type: "input",
     name: "gitName",
-    message: "What is your GitHub url?",
+    message: "What is your GitHub username?",
   },
   {
     type: "input",

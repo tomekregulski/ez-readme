@@ -14,6 +14,10 @@
 
 This is a node terminal app that allows the user to easily create a README.md file by answering a series of prompts via inquirer. Once the prompts have been answered, a writeFile function executes and generates a readme based on a standard template, creating a professional readme, including the appropriate license text and badge. This readme has been generated using the program, and is currently being used as a test. It will be further detailed out as the project nears completion.
 
+Because this app is solely a command line program, it is not deployed. For a demonstration of its functionality, please view the video at this link:
+
+<a href="https://drive.google.com/file/d/1XZZSvq09aiZ2KiBXq5jO2FamPRI9qa7W/view" target="_blank">App Demo Video</a>
+
 # Installation
 
 Clone the repo and open it in your code editor of choice and install the necessary dependencies via the termnial:
